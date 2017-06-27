@@ -1,7 +1,7 @@
 10.times do |blog|
   Blog.create!(
-    title: “My Blog Post #{blog}”
-    body: "Hi my name is Brandon"
+    title: 'My Blog Post #{blog}'
+    body: 'Hi my name is Brandon'
    )
 end
   
