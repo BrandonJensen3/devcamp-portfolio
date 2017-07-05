@@ -1,9 +1,11 @@
 10.times do |blog|
   Blog.create!(
-    title: 'My Blog Post #{blog}'
+    title: 'My Blog Post #{blog}',
     body: 'Hi my name is Brandon'
    )
 end
+
+  puts "10 blog posts created!"
   
 5.times do |skill|
   Skill.create!(
@@ -11,6 +13,8 @@ end
     percent_utilized: 15
   )
 end
+
+puts "5 skills created"
 
 8.times do |portfolio_item|
   Portfolio.create!(
