@@ -1,7 +1,16 @@
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+  )
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
   Blog.create!(
     title: 'My Blog Post #{blog}',
-    body: 'Hi my name is Brandon'
+    body: 'Hi my name is Brandon',
+    topic_id: Topic.last.id
    )
 end
 
